@@ -1,0 +1,1 @@
+web: gunicorn moringa_graduates.wsgi
