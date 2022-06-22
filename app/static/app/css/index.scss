@@ -1,0 +1,132 @@
+@import "mixins";
+
+body {
+  width: 100%;
+  height: 100%;
+  main {
+    width: 100%;
+    height: 100%;
+    header {
+      width: 100%;
+      padding: 1.5% 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        width: 20%;
+        .image {
+          a {
+            text-decoration: none;
+            img {
+              width: 12vw;
+            }
+          }
+        }
+      }
+      .right {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .links {
+          width: 30%;
+          margin-right: 10%;
+          ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+              margin: 0 5%;
+              a {
+                width: 100%;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $moringa_navy;
+                font-weight: 500;
+                font-size: 1vw;
+                &:hover {
+                  color: $moringa_primary;
+                }
+              }
+            }
+          }
+        }
+        .search {
+          width: 20%;
+          margin-right: 10%;
+          form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+              appearance: none;
+              outline: none;
+              border: 0.1vw solid $moringa_navy;
+              border-radius: 0.3vw 0 0 0.3vw;
+              padding: 3%;
+              border-width: 0.1vw 0 0.1vw 0.1vw;
+              color: $moringa_navy;
+              font-size: 0.9vw;
+            }
+            input[type="submit"] {
+              cursor: pointer;
+              border-radius: 0 0.3vw 0.3vw 0;
+              border-width: 0.1vw;
+              font-size: 0.9vw;
+              font-weight: 500;
+              text-transform: capitalize;
+              background-color: $moringa_navy;
+              color: #fff;
+              padding: 3% 10%;
+            }
+          }
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 25;
+          .info {
+            margin-right: 10%;
+            text-align: right;
+            p {
+              text-transform: capitalize;
+              color: $moringa_navy;
+            }
+            a {
+              text-transform: capitalize;
+              text-decoration: none;
+              color: $moringa_primary;
+              &:hover {
+                color: $moringa_navy;
+              }
+            }
+          }
+          .avatar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .image {
+              width: 4vw;
+              height: 4vw;
+              border-radius: 50%;
+              border: 0.2vw solid $moringa_navy;
+              padding: 2%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              object-fit: cover;
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

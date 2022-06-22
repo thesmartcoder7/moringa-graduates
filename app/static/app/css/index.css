@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+body main {
+  width: 100%;
+  height: 100%;
+}
+body main header {
+  width: 100%;
+  padding: 1.5% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main header .left {
+  width: 20%;
+}
+body main header .left .image a {
+  text-decoration: none;
+}
+body main header .left .image a img {
+  width: 12vw;
+}
+body main header .right {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .links {
+  width: 30%;
+  margin-right: 10%;
+}
+body main header .right .links ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body main header .right .links ul li {
+  margin: 0 5%;
+}
+body main header .right .links ul li a {
+  width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #101f3c;
+  font-weight: 500;
+  font-size: 1vw;
+}
+body main header .right .links ul li a:hover {
+  color: #fa510f;
+}
+body main header .right .search {
+  width: 20%;
+  margin-right: 10%;
+}
+body main header .right .search form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main header .right .search form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: 0.1vw solid #101f3c;
+  border-radius: 0.3vw 0 0 0.3vw;
+  padding: 3%;
+  border-width: 0.1vw 0 0.1vw 0.1vw;
+  color: #101f3c;
+  font-size: 0.9vw;
+}
+body main header .right .search form input[type=submit] {
+  cursor: pointer;
+  border-radius: 0 0.3vw 0.3vw 0;
+  border-width: 0.1vw;
+  font-size: 0.9vw;
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: #101f3c;
+  color: #fff;
+  padding: 3% 10%;
+}
+body main header .right .user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25;
+}
+body main header .right .user .info {
+  margin-right: 10%;
+  text-align: right;
+}
+body main header .right .user .info p {
+  text-transform: capitalize;
+  color: #101f3c;
+}
+body main header .right .user .info a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fa510f;
+}
+body main header .right .user .info a:hover {
+  color: #101f3c;
+}
+body main header .right .user .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .user .avatar .image {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  border: 0.2vw solid #101f3c;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main header .right .user .avatar .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}/*# sourceMappingURL=index.css.map */
