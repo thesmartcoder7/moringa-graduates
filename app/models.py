@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import Profile
+from django.contrib.auth.models import User
 
 
 class Education(models.Model):
@@ -23,3 +24,14 @@ class Experience(models.Model):
 
     def __str__(self):
         return f"{self.profile.user.username.title()}'s Experience"
+
+
+class Project(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=500)
+    image = models.ImageField(upload_to='moringa_graduates/project_images')
+    description = models.TextField()
+    link = models.CharField(max_length=2000)
+
+    def __str__(self):
+        return self.title.title()

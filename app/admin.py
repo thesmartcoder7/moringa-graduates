@@ -4,3 +4,4 @@ from app.models import *
 # Register your models here.
 admin.site.register(Education)
 admin.site.register(Experience)
+admin.site.register(Project)
