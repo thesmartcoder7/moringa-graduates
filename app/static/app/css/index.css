@@ -246,7 +246,7 @@ body main #partners .logos img {
 }
 body main #alumni {
   width: 100%;
-  padding: 7% 10% 10% 10%;
+  padding: 7% 10% 15% 10%;
 }
 body main #alumni h3 {
   width: 100%;
@@ -274,4 +274,14 @@ body main #alumni .testimonial .right {
   width: 50%;
   border-left: 0.2vw solid #fa510f;
   padding-left: 3%;
+}
+body main footer {
+  width: 100%;
+  text-align: center;
+  padding: 2% 10%;
+  background-color: #101f3c;
+}
+body main footer p {
+  font-size: 1vw;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
