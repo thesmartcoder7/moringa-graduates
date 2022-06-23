@@ -222,7 +222,7 @@ body {
     // partners
     #partners {
       width: 100%;
-      padding: 5% 10%;
+      padding: 5% 10% 10% 10%;
       background-color: $moringa_navy;
       h3 {
         width: 100%;
@@ -231,7 +231,7 @@ body {
         font-weight: 700;
         text-transform: capitalize;
         color: $moringa_primary;
-        margin-bottom: 7%;
+        margin-bottom: 5%;
       }
       .logos {
         width: 100%;
@@ -240,6 +240,38 @@ body {
         justify-content: space-between;
         img {
           width: 10%;
+        }
+      }
+    }
+
+    #alumni {
+      width: 100%;
+      padding: 7% 10% 10% 10%;
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $moringa_primary;
+        margin-bottom: 5%;
+      }
+      .testimonial {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left {
+          width: 45%;
+          p {
+            font-size: 1vw;
+            color: $moringa_navy;
+          }
+        }
+        .right {
+          width: 50%;
+          border-left: 0.2vw solid $moringa_primary;
+          padding-left: 3%;
         }
       }
     }
