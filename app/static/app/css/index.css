@@ -94,6 +94,9 @@ body main header .right .search form input[type=submit] {
   color: #fff;
   padding: 3% 10%;
 }
+body main header .right .search form input[type=submit]:hover {
+  background-color: rgba(16, 31, 60, 0.8431372549);
+}
 body main header .right .user {
   display: flex;
   align-items: center;
@@ -175,7 +178,46 @@ body main #hero a {
   background-color: #fa510f;
   border: 0.1vw solid #fa510f;
   border-radius: 0.5vw;
+  transition: 0.3s ease-in-out;
 }
 body main #hero a:hover {
   background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+body main #ready {
+  padding: 5% 10%;
+}
+body main #ready .top {
+  margin-bottom: 3%;
+}
+body main #ready .top .mini {
+  width: 100%;
+  text-align: center;
+  color: #fa510f;
+  font-weight: 700;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 1%;
+}
+body main #ready .top .main {
+  width: 100%;
+  text-align: center;
+  color: #101f3c;
+  font-weight: 700;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  margin-bottom: 2%;
+}
+body main #ready .top p {
+  font-size: 1vw;
+  color: #101f3c;
+}
+body main #ready .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #ready .bottom img {
+  width: 32%;
+  border-radius: 0.3vw;
 }/*# sourceMappingURL=index.css.map */

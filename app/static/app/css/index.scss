@@ -83,6 +83,9 @@ body {
               background-color: $moringa_navy;
               color: #fff;
               padding: 3% 10%;
+              &:hover {
+                background-color: #101f3cd7;
+              }
             }
           }
         }
@@ -169,8 +172,49 @@ body {
         background-color: $moringa_primary;
         border: 0.1vw solid $moringa_primary;
         border-radius: 0.5vw;
+        transition: 0.3s ease-in-out;
         &:hover {
           background-color: transparent;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    // industry ready styling
+    #ready {
+      padding: 5% 10%;
+      .top {
+        margin-bottom: 3%;
+        .mini {
+          width: 100%;
+          text-align: center;
+          color: $moringa_primary;
+          font-weight: 700;
+          font-size: 1.5vw;
+          text-transform: capitalize;
+          margin-bottom: 1%;
+        }
+        .main {
+          width: 100%;
+          text-align: center;
+          color: $moringa_navy;
+          font-weight: 700;
+          font-size: 1.5vw;
+          text-transform: capitalize;
+          margin-bottom: 2%;
+        }
+        p {
+          font-size: 1vw;
+          color: $moringa_navy;
+        }
+      }
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 32%;
+          border-radius: 0.3vw;
         }
       }
     }
