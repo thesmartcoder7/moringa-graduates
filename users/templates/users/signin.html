@@ -1,0 +1,43 @@
+{% extends 'users/signup.html' %}
+<!--  -->
+{% load static %}
+
+<!--  -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'users/css/signin.css' %}" />
+{% endblock %}
+<!--  -->
+
+{% block title %}
+<title>Sign In</title>
+{% endblock %}
+
+<!--  -->
+{% block message %}
+<!--  -->
+{% if messages %}
+<!--  -->
+{% for message in messages %}
+<div id="system-messages">
+  <div class="message">
+    <p>{{message}}</p>
+  </div>
+  <p class="close-messages">&times</p>
+</div>
+{% endfor %}
+<!--  -->
+{% endif %}
+<!--  -->
+{% endblock %}
+
+<!--  -->
+{% block form_heading %}
+<h1>Sign In</h1>
+{% endblock %}
+
+<!--  -->
+
+{% block option %}
+<input type="submit" value="Sign In" />
+<p>Don't have an account yet? <a href="{% url 'users-signup' %}">Sign Up</a></p>
+{% endblock %}

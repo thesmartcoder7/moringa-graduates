@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/moringa_background.png");
+}
+body main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+body main #system-messages {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  -webkit-animation: appear 0.5s;
+          animation: appear 0.5s;
+}
+body main #system-messages .close-messages {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  background-color: #fa510f;
+  top: 39%;
+  right: 28%;
+  cursor: pointer;
+}
+body main #system-messages .message {
+  border: 0.1vw solid #fa510f;
+  border-radius: 0.5vw;
+  width: 50%;
+  background-color: #000;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+body main #system-messages .message p {
+  color: #fff;
+  font-size: 1vw;
+}
+body main .form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .form-container h1 {
+  color: #fa510f;
+  font-size: 2vw;
+  font-weight: 700;
+}
+body main .form-container form {
+  width: 40%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body main .form-container form label {
+  color: #fa510f;
+  font-size: 1.1vw;
+}
+body main .form-container form .helptext {
+  display: none;
+}
+body main .form-container form input {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 0.15vw solid #fa510f;
+  padding: 2%;
+  color: #101f3c;
+  margin-bottom: 10%;
+}
+body main .form-container form #id_email {
+  margin-bottom: 7%;
+}
+body main .form-container form #id_username {
+  margin-bottom: 10%;
+}
+body main .form-container form input[type=submit] {
+  margin-top: 5%;
+  color: #fff;
+  background-color: #fa510f;
+  border: 0.11vw solid #fa510f;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  padding: 2.5% 0;
+}
+body main .form-container form input[type=submit]:hover {
+  color: #fa510f;
+  background-color: transparent;
+}
+body main .form-container form p {
+  width: 100%;
+  text-align: center;
+  color: #101f3c;
+  font-size: 1vw;
+  margin-top: 3%;
+}
+body main .form-container form p a {
+  color: #fa510f;
+  text-decoration: none;
+}/*# sourceMappingURL=signin.css.map */

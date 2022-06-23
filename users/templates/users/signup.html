@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block css %}
+    <link rel="stylesheet" href="{% static 'users/css/signup.css' %}" />
+    {% endblock %}
+    <link
+      rel="shortcut icon"
+      href="{% static 'app/images/moringa_logo.png' %}"
+      type="image/x-icon"
+    />
+    {% block title %}
+    <title>Sign Up</title>
+    {% endblock %}
+  </head>
+  <body>
+    <main>
+      {% block message %}
+      <!--  -->
+      {% if messages %}
+      <!--  -->
+      {% for message in messages %}
+      <div id="system-messages">
+        <p class="close-messages">&times</p>
+        <div class="message">
+          <p>{{message}}</p>
+        </div>
+      </div>
+      {% endfor %}
+      <!--  -->
+      {% endif %}
+      <!--  -->
+      {% endblock %}
+      <div class="form-container">
+        {% block form_heading %}
+        <h1>Create an Account</h1>
+        {% endblock %}
+        <form method="POST">
+          {% csrf_token %}
+          <!--  -->
+          {{form}}
+          <!--  -->
+          {% block option %}
+          <input type="submit" value="Submit" />
+          <p>
+            Already have an account?
+            <a href="{% url 'users-signin' %}">Sign In</a>
+          </p>
+          {% endblock %}
+        </form>
+      </div>
+    </main>
+    <script src="{% static 'app/js/index.js' %}"></script>
+  </body>
+</html>
