@@ -1,0 +1,30 @@
+{% extends 'app/index.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'app/css/developers.css' %}" />
+{% endblock %}
+<!--  -->
+{% block title %}
+<title>Developers</title>
+{% endblock %}
+<!--  -->
+{% block content %}
+<section id="hero">
+  <h1>Get your industry-ready graduates now</h1>
+  <h2>
+    Our Career Services Department keeps track of all our alumni and their
+    development journey post their Moringa Education. We have a vast pool of
+    candidates that are at different stages in their career journey so if you
+    need junior developers and data scientists or if you are looking for more
+    senior people…our graduate support team will help you meet your hiring
+    needs.
+  </h2>
+  <form action="" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="search for developers " name="search" />
+    <input type="submit" value="Search" />
+  </form>
+</section>
+{% endblock %}

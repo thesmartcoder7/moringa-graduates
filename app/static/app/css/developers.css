@@ -117,135 +117,63 @@ body main header .right .user .avatar .image img {
 }
 body main #hero {
   width: 100%;
-  height: 45vw;
+  height: 35vw;
   padding: 5% 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  background-image: linear-gradient(to bottom, rgba(16, 31, 60, 0.6509803922), rgba(16, 31, 60, 0.6509803922)), url("../images/hero.png");
+  background-image: linear-gradient(to bottom, rgba(16, 31, 60, 0.7529411765), rgba(16, 31, 60, 0.7529411765)), url("../images/hero.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 body main #hero h1 {
-  width: 50%;
+  width: 100%;
+  text-align: center;
   font-weight: 700;
   color: #fff;
   font-size: 2.5vw;
   margin-bottom: 1%;
 }
 body main #hero h2 {
-  width: 50%;
+  text-align: center;
+  width: 100%;
   color: #fff;
   font-size: 1.2vw;
   font-weight: 400;
   margin-bottom: 2%;
 }
-body main #hero a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  padding: 1% 3%;
-  background-color: #fa510f;
-  border: 0.1vw solid #fa510f;
-  border-radius: 0.5vw;
-  transition: 0.3s ease-in-out;
-}
-body main #hero a:hover {
-  background-color: transparent;
-  transition: 0.3s ease-in-out;
-}
-body main #ready {
-  padding: 7% 10% 15% 10%;
-}
-body main #ready .top {
-  margin-bottom: 3%;
-}
-body main #ready .top .mini {
+body main #hero form {
   width: 100%;
-  text-align: center;
-  color: #fa510f;
-  font-weight: 700;
-  font-size: 1.5vw;
-  text-transform: capitalize;
-  margin-bottom: 1%;
-}
-body main #ready .top .main {
-  width: 100%;
-  text-align: center;
-  color: #101f3c;
-  font-weight: 700;
-  font-size: 1.5vw;
-  text-transform: capitalize;
-  margin-bottom: 2%;
-}
-body main #ready .top p {
-  font-size: 1vw;
-  color: #101f3c;
-}
-body main #ready .bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-body main #ready .bottom img {
-  width: 32%;
+body main #hero form input {
+  width: 30%;
+  padding: 1% 2%;
+  outline: none;
+  border: none;
   border-radius: 0.3vw;
-}
-body main #partners {
-  width: 100%;
-  padding: 5% 10% 10% 10%;
-  background-color: #101f3c;
-}
-body main #partners h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5vw;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #fa510f;
-  margin-bottom: 5%;
-}
-body main #partners .logos {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body main #partners .logos img {
-  width: 10%;
-}
-body main #alumni {
-  width: 100%;
-  padding: 7% 10% 15% 10%;
-}
-body main #alumni h3 {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5vw;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #fa510f;
-  margin-bottom: 5%;
-}
-body main #alumni .testimonial {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-body main #alumni .testimonial .left {
-  width: 45%;
-}
-body main #alumni .testimonial .left p {
-  font-size: 1vw;
+  margin: 0 0.5%;
   color: #101f3c;
+  font-size: 1vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
-body main #alumni .testimonial .right {
-  width: 50%;
-  border-left: 0.2vw solid #fa510f;
-  padding-left: 3%;
+body main #hero form input[type=submit] {
+  width: 10%;
+  font-size: 1vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  background-color: #fa510f;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
 }
 body main footer {
   width: 100%;
@@ -256,4 +184,4 @@ body main footer {
 body main footer p {
   font-size: 1vw;
   color: #fff;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=developers.css.map */
