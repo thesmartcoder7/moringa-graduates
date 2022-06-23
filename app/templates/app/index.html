@@ -48,7 +48,7 @@
               </li>
               {% if request.user.is_authenticated %}
               <li>
-                <a href="">Profile</a>
+                <a href="">Dashboard</a>
               </li>
               {% endif %}
             </ul>
@@ -71,6 +71,7 @@
             </div>
             {% else %}
             <div class="info">
+              <p>( Graduates )</p>
               <p>
                 <a href="{% url 'users-signin' %}">Sign In</a> /
                 <a href="{% url 'users-signup' %}">Sign Up</a>
