@@ -10,7 +10,7 @@ class Education(models.Model):
     to_date = models.DateField(blank=True)
 
     def __str__(self):
-        return f"{self.profile.user.username}'s Educaiton History"
+        return f"{self.profile.user.username.title()}'s Educaiton History"
 
 
 
@@ -22,4 +22,4 @@ class Experience(models.Model):
     responsibilities = models.TextField(blank=True)
 
     def __str__(self):
-        return f"{self.profile.user.username}'s Experience"
+        return f"{self.profile.user.username.title()}'s Experience"
