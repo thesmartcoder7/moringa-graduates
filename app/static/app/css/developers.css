@@ -121,7 +121,7 @@ body main #hero {
   padding: 5% 10%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   background-image: linear-gradient(to bottom, rgba(16, 31, 60, 0.7529411765), rgba(16, 31, 60, 0.7529411765)), url("../images/hero.png");
   background-position: center center;
@@ -138,7 +138,7 @@ body main #hero h1 {
 }
 body main #hero h2 {
   text-align: center;
-  width: 100%;
+  width: 80%;
   color: #fff;
   font-size: 1.2vw;
   font-weight: 400;
@@ -149,6 +149,7 @@ body main #hero form {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2%;
 }
 body main #hero form input {
   width: 30%;
@@ -174,6 +175,100 @@ body main #hero form input[type=submit] {
   color: #fff;
   font-weight: 500;
   cursor: pointer;
+}
+body main #developers {
+  padding: 5% 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body main #developers .card {
+  width: 24%;
+  border-radius: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3% 0;
+}
+body main #developers .card .info .image {
+  margin-top: 10%;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 0.5vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.2vw solid #4a566c;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+body main #developers .card .info .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  outline: none;
+  border: none;
+}
+body main #developers .card .info .name-title {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 1vw;
+}
+body main #developers .card .info .name-title a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+body main #developers .card .info .name-title a .username {
+  color: #fa510f;
+  font-weight: 500;
+}
+body main #developers .card .info .name-title a .usertitle {
+  color: #101f3c;
+}
+body main #developers .card .info .socials {
+  padding: 7% 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #developers .card .info .socials a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #developers .card .info .socials a svg {
+  color: #101f3c;
+  width: 1.5vw;
+  margin: 0 5%;
+}
+body main #developers .card .info .socials a svg:hover {
+  color: #fa510f;
+}
+body main #developers .card .cta {
+  width: 100%;
+  text-align: center;
+}
+body main #developers .card .cta a {
+  padding: 2% 5%;
+  text-decoration: none;
+  color: #fa510f;
+  border-radius: 0.3vw;
 }
 body main footer {
   width: 100%;
