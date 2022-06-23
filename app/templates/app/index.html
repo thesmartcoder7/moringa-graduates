@@ -29,13 +29,19 @@
           <div class="links">
             <ul>
               <li>
-                <a href="">Courses</a>
+                <a href="https://moringaschool.com/courses/" target="_blank"
+                  >Courses</a
+                >
               </li>
               <li>
-                <a href="">About</a>
+                <a href="https://moringaschool.com/about-us/" target="_blank"
+                  >About</a
+                >
               </li>
               <li>
-                <a href="">Blog</a>
+                <a href="https://moringaschool.com/blog/" target="_blank"
+                  >Blog</a
+                >
               </li>
               <li>
                 <a href="">Our Developers</a>
@@ -51,15 +57,16 @@
           <div class="user">
             {% if request.user.is_authenticated %}
             <div class="info">
-              <p>Username</p>
+              {% if request.user.first_name and request.user.last_name %}
+              <p>{{request.user.first_name}} {{request.user.last_name}}</p>
+              {% else %}
+              <p>{{request.user.username}}</p>
+              {% endif %}
               <a href="{% url 'users-signout' %}">Sign Out</a>
             </div>
             <div class="avatar">
               <div class="image">
-                <img
-                  src="{% static 'app/images/headshot.jpeg' %}"
-                  alt="usename"
-                />
+                <img src="{{request.user.profile.image.url}}" alt="usename" />
               </div>
             </div>
             {% else %}
