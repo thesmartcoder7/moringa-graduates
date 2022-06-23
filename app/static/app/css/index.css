@@ -185,7 +185,7 @@ body main #hero a:hover {
   transition: 0.3s ease-in-out;
 }
 body main #ready {
-  padding: 5% 10%;
+  padding: 7% 10% 15% 10%;
 }
 body main #ready .top {
   margin-bottom: 3%;
@@ -220,4 +220,27 @@ body main #ready .bottom {
 body main #ready .bottom img {
   width: 32%;
   border-radius: 0.3vw;
+}
+body main #partners {
+  width: 100%;
+  padding: 5% 10%;
+  background-color: #101f3c;
+}
+body main #partners h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fa510f;
+  margin-bottom: 7%;
+}
+body main #partners .logos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #partners .logos img {
+  width: 10%;
 }/*# sourceMappingURL=index.css.map */

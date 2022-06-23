@@ -182,7 +182,7 @@ body {
 
     // industry ready styling
     #ready {
-      padding: 5% 10%;
+      padding: 7% 10% 15% 10%;
       .top {
         margin-bottom: 3%;
         .mini {
@@ -215,6 +215,31 @@ body {
         img {
           width: 32%;
           border-radius: 0.3vw;
+        }
+      }
+    }
+
+    // partners
+    #partners {
+      width: 100%;
+      padding: 5% 10%;
+      background-color: $moringa_navy;
+      h3 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $moringa_primary;
+        margin-bottom: 7%;
+      }
+      .logos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 10%;
         }
       }
     }
