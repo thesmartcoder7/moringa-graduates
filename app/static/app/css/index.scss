@@ -33,15 +33,20 @@ body {
         align-items: center;
         justify-content: flex-end;
         .links {
-          width: 30%;
-          margin-right: 10%;
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
           ul {
             width: 100%;
             list-style: none;
             display: flex;
             justify-content: flex-end;
             li {
-              margin: 0 5%;
+              margin: 0 2%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
               a {
                 width: 100%;
                 text-decoration: none;
@@ -56,40 +61,9 @@ body {
             }
           }
         }
-        .search {
-          width: 20%;
-          margin-right: 10%;
-          form {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            input {
-              appearance: none;
-              outline: none;
-              border: 0.1vw solid $moringa_navy;
-              border-radius: 0.3vw 0 0 0.3vw;
-              padding: 3%;
-              border-width: 0.1vw 0 0.1vw 0.1vw;
-              color: $moringa_navy;
-              font-size: 0.9vw;
-            }
-            input[type="submit"] {
-              cursor: pointer;
-              border-radius: 0 0.3vw 0.3vw 0;
-              border-width: 0.1vw;
-              font-size: 0.9vw;
-              font-weight: 500;
-              text-transform: capitalize;
-              background-color: $moringa_navy;
-              color: #fff;
-              padding: 3% 10%;
-              &:hover {
-                background-color: #101f3cd7;
-              }
-            }
-          }
-        }
+
         .user {
+          width: 30%;
           display: flex;
           align-items: center;
           justify-content: flex-end;
@@ -139,7 +113,7 @@ body {
     // hero styling
     #hero {
       width: 100%;
-      height: 40vw;
+      height: 45vw;
       padding: 5% 10%;
       display: flex;
       flex-direction: column;

@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -6,6 +7,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = models.ImageField(default='default.png', upload_to='moringa_graduates/profile_pics')
     work_title = models.CharField(max_length=1000, blank=True)
     professional_summary = models.TextField(blank=True)
     skills = models.TextField(blank=True)

@@ -39,8 +39,10 @@ body main header .right {
   justify-content: flex-end;
 }
 body main header .right .links {
-  width: 30%;
-  margin-right: 10%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 body main header .right .links ul {
   width: 100%;
@@ -49,7 +51,10 @@ body main header .right .links ul {
   justify-content: flex-end;
 }
 body main header .right .links ul li {
-  margin: 0 5%;
+  margin: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 body main header .right .links ul li a {
   width: 100%;
@@ -62,42 +67,8 @@ body main header .right .links ul li a {
 body main header .right .links ul li a:hover {
   color: #fa510f;
 }
-body main header .right .search {
-  width: 20%;
-  margin-right: 10%;
-}
-body main header .right .search form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-body main header .right .search form input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: none;
-  border: 0.1vw solid #101f3c;
-  border-radius: 0.3vw 0 0 0.3vw;
-  padding: 3%;
-  border-width: 0.1vw 0 0.1vw 0.1vw;
-  color: #101f3c;
-  font-size: 0.9vw;
-}
-body main header .right .search form input[type=submit] {
-  cursor: pointer;
-  border-radius: 0 0.3vw 0.3vw 0;
-  border-width: 0.1vw;
-  font-size: 0.9vw;
-  font-weight: 500;
-  text-transform: capitalize;
-  background-color: #101f3c;
-  color: #fff;
-  padding: 3% 10%;
-}
-body main header .right .search form input[type=submit]:hover {
-  background-color: rgba(16, 31, 60, 0.8431372549);
-}
 body main header .right .user {
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -145,7 +116,7 @@ body main header .right .user .avatar .image img {
 }
 body main #hero {
   width: 100%;
-  height: 40vw;
+  height: 45vw;
   padding: 5% 10%;
   display: flex;
   flex-direction: column;
