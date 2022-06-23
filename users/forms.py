@@ -31,9 +31,9 @@ class ProfileUpdateForm(forms.ModelForm):
             'work_title',
             'professional_summary',
             'skills',
+            'resume',
             'linkedin',
             'github',
             'twitter',
-            'medium',
             'portfolio'
         ]
