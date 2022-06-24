@@ -75,7 +75,6 @@ def add_project(request):
 
 
 
-@login_required
 def search(request):
     if request.method == 'POST':
         all_users = User.objects.all()
