@@ -72,3 +72,22 @@ def add_project(request):
             return render(request, 'app/add_project.html', context)
     
     return render(request, 'app/add_project.html', context)
+
+
+
+@login_required
+def search(request):
+    if request.method == 'POST':
+        all_users = User.objects.all()
+        filtered_users = []
+        search_term = request.POST['search'].split(' ')
+        for user in all_users:
+            for term in search_term:
+                if term.lower() in user.username.lower() and user not in filtered_users and term != "" \
+                    or term.lower() in user.first_name.lower() and user not in filtered_users and term != "" \
+                    or term.lower() in user.last_name.lower() and user not in filtered_users and term != "" \
+                    or term.lower() in user.profile.skills.lower() and user not in filtered_users and term != "":
+                    filtered_users.append(user)
+
+
+    return render(request, 'app/search.html', {'all_devs': filtered_users})

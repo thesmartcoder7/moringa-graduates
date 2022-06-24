@@ -6,5 +6,6 @@ urlpatterns = [
     path('developers/', views.developers, name='app-developers'),
     path('profile/<username>', views.dev_profile, name='app-profile'),
     path('dashboard/', views.dashboard, name='app-dashboard'),
-    path('new_project/', views.add_project, name='app-add-project')
+    path('new_project/', views.add_project, name='app-add-project'),
+    path('search/', views.search, name='app-search')
 ]

@@ -21,7 +21,7 @@
     senior people…our graduate support team will help you meet your hiring
     needs.
   </h2>
-  <form action="" method="post">
+  <form action="{% url 'app-search' %}" method="post">
     {% csrf_token %}
     <input type="text" placeholder="search for developers " name="search" />
     <input type="submit" value="Search" />
