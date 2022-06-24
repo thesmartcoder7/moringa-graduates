@@ -10,6 +10,8 @@ whitenoise = "*"
 psycopg2 = "*"
 pillow = "*"
 django-cloudinary-storage = "*"
+gunicorn = "*"
+django-heroku = "*"
 
 [dev-packages]
 
