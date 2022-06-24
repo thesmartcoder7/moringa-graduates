@@ -80,12 +80,15 @@
           </a>
           {% endif %}
         </div>
+        {% block user_action %}
         <div class="contact">
           <a class="send-message">Send Message</a>
         </div>
+        {% endblock %}
       </div>
     </div>
   </div>
+  {% block right_content %}
   <div class="right">
     <h3 class="main">Professional Summary</h3>
     {% if dev.profile.professional_summary %}
@@ -117,6 +120,7 @@
     </a>
     {% endif %}
   </div>
+  {% endblock %}
 </section>
 
 <!-- projects section -->
@@ -143,7 +147,11 @@
     {% endfor %}
   </div>
   {% else %}
+  <!--  -->
+  {% block empty_project %}
   <p>This user has not updated their projects yet.</p>
+  {% endblock %}
+  <!--  -->
   {% endif %}
 </section>
 {% endblock %}

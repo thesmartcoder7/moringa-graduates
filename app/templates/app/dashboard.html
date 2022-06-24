@@ -1,0 +1,51 @@
+{% extends 'app/dev_profile.html' %}
+<!--  -->
+{% block user_action %}
+<div class="contact">
+  <a href="{% url 'users-update' %}" class="send-message">Edit Profile</a>
+  &nbsp;
+  <a class="send-message">Add Project</a>
+</div>
+{% endblock %}
+<!--  -->
+{% block title %}
+<title>Dashboard</title>
+{% endblock %}
+<!--  -->
+{% block right_content %}
+<div class="right">
+  <h3 class="main">About me</h3>
+  {% if dev.profile.professional_summary %}
+  <p>{{dev.profile.professional_summary}}</p>
+  {% else %}
+  <p>You haven't updated your professional summary yet</p>
+  {% endif %}
+  <!--  -->
+  <h3 class="skills">Skills</h3>
+  {% if skills %}
+  <!--  -->
+  <ul>
+    {% for skill in skills %}
+    <li>{{skill}}</li>
+    {% endfor %}
+  </ul>
+  <!--  -->
+  {% else %}
+  <p>You haven't updated your skills yet</p>
+  {% endif %}
+  <!--  -->
+  {% if dev.profile.resume %}
+  <a
+    href="{{dev.profile.resume.url}}"
+    download="{{dev.username}}_resume.pdf"
+    target="_blank"
+  >
+    Download Resume
+  </a>
+  {% endif %}
+</div>
+{% endblock %}
+<!--  -->
+{% block empty_project %}
+<p>Add Projects here for potential recruiters.</p>
+{% endblock %}

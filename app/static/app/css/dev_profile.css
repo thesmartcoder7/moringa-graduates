@@ -216,7 +216,8 @@ body main #hero .left .card .info .contact a {
   transition: 0.3s ease-in-out;
 }
 body main #hero .left .card .info .contact a:hover {
-  padding: 4% 6%;
+  color: #fff;
+  background-color: #4a566c;
   transition: 0.3s ease-in-out;
 }
 body main #hero .left .card .cta {
@@ -269,7 +270,7 @@ body main #hero .right a {
   text-decoration: none;
 }
 body main #hero .right a:hover {
-  color: #fff;
+  color: #4a566c;
 }
 body main #projects {
   padding: 7% 10% 10% 10%;
@@ -298,6 +299,7 @@ body main #projects p {
   font-size: 1vw;
 }
 body main #projects .all-projects {
+  width: 100%;
   padding: 5% 0;
   display: flex;
   align-items: flex-start;
@@ -325,6 +327,8 @@ body main #projects .all-projects .project .title {
 }
 body main #projects .all-projects .project .title h3 {
   font-size: 1.5vw;
+  width: 100%;
+  text-align: left;
 }
 body main #projects .all-projects .project .description {
   width: 90%;
@@ -335,9 +339,13 @@ body main #projects .all-projects .project .description p {
 }
 body main #projects .all-projects .project .project-link {
   width: 90%;
+  margin-top: 2%;
   text-align: center;
 }
 body main #projects .all-projects .project .project-link a {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
   text-decoration: none;
   color: #fa510f;
   font-size: 1vw;

@@ -206,7 +206,8 @@ body {
                 border-radius: 0.3vw;
                 transition: 0.3s ease-in-out;
                 &:hover {
-                  padding: 4% 6%;
+                  color: #fff;
+                  background-color: #4a566c;
                   transition: 0.3s ease-in-out;
                 }
               }
@@ -263,7 +264,7 @@ body {
           color: $moringa_primary;
           text-decoration: none;
           &:hover {
-            color: #fff;
+            color: #4a566c;
           }
         }
       }
@@ -295,6 +296,7 @@ body {
         font-size: 1vw;
       }
       .all-projects {
+        width: 100%;
         padding: 5% 0;
         display: flex;
         align-items: flex-start;
@@ -318,6 +320,8 @@ body {
             margin-top: 2%;
             h3 {
               font-size: 1.5vw;
+              width: 100%;
+              text-align: left;
             }
           }
           .description {
@@ -329,8 +333,12 @@ body {
           }
           .project-link {
             width: 90%;
+            margin-top: 2%;
             text-align: center;
             a {
+              display: inline-block;
+              width: 100%;
+              text-align: left;
               text-decoration: none;
               color: $moringa_primary;
               font-size: 1vw;

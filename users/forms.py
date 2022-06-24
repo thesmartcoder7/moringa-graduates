@@ -30,6 +30,7 @@ class ProfileUpdateForm(forms.ModelForm):
         fields = [
             'work_title',
             'professional_summary',
+            'image',
             'skills',
             'resume',
             'linkedin',
