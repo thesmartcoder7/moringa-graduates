@@ -1,6 +1,7 @@
-from email.policy import default
+
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary_storage.storage import RawMediaCloudinaryStorage
 
 
 
@@ -10,7 +11,7 @@ class Profile(models.Model):
     image = models.ImageField(default='default.png', upload_to='moringa_graduates/profile_pics')
     work_title = models.CharField(max_length=1000, blank=True)
     professional_summary = models.TextField(blank=True)
-    resume = models.FileField(upload_to='user_resumes/', null=True, blank=True)
+    resume = models.FileField(upload_to='user_resumes/', null=True, blank=True, storage=RawMediaCloudinaryStorage())
     skills = models.TextField(blank=True)
     linkedin = models.CharField(max_length=5000, blank=True)
     github = models.CharField(max_length=5000, blank=True)

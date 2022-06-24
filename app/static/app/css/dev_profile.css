@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+body main {
+  width: 100%;
+  height: 100%;
+}
+body main header {
+  width: 100%;
+  padding: 1% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main header .left {
+  width: 20%;
+}
+body main header .left .image a {
+  text-decoration: none;
+}
+body main header .left .image a img {
+  width: 10vw;
+}
+body main header .right {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .links {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .links ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body main header .right .links ul li {
+  margin: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main header .right .links ul li a {
+  width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #101f3c;
+  font-weight: 500;
+  font-size: 1vw;
+}
+body main header .right .links ul li a:hover {
+  color: #fa510f;
+}
+body main header .right .user {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25;
+}
+body main header .right .user .info {
+  margin-right: 5%;
+  text-align: right;
+}
+body main header .right .user .info p {
+  text-transform: capitalize;
+  color: #101f3c;
+  font-size: 1vw;
+}
+body main header .right .user .info a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fa510f;
+}
+body main header .right .user .info a:hover {
+  color: #101f3c;
+}
+body main header .right .user .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .user .avatar .image {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  border: 0.2vw solid #101f3c;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main header .right .user .avatar .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+body main #hero {
+  width: 100%;
+  padding: 5% 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #101f3c;
+}
+body main #hero .left {
+  width: 30%;
+}
+body main #hero .left .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3% 0;
+  border-right: 0.2vw solid #4a566c;
+}
+body main #hero .left .card .info .image {
+  margin-top: 10%;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 0.5vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.2vw solid #4a566c;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+body main #hero .left .card .info .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.3vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  outline: none;
+  border: none;
+}
+body main #hero .left .card .info .name-title {
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 1vw;
+  text-transform: capitalize;
+}
+body main #hero .left .card .info .name-title .username {
+  color: #fa510f;
+  font-weight: 500;
+  font-size: 1.2vw;
+}
+body main #hero .left .card .info .name-title .usertitle {
+  color: #fff;
+}
+body main #hero .left .card .info .socials {
+  padding: 7% 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #hero .left .card .info .socials a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #hero .left .card .info .socials a svg {
+  color: #fa510f;
+  width: 1.5vw;
+  margin: 0 5%;
+}
+body main #hero .left .card .info .socials a svg:hover {
+  color: #4a566c;
+}
+body main #hero .left .card .info .contact {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+body main #hero .left .card .info .contact a {
+  text-decoration: none;
+  background-color: #fa510f;
+  color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  padding: 3% 5%;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  transition: 0.3s ease-in-out;
+}
+body main #hero .left .card .info .contact a:hover {
+  padding: 4% 6%;
+  transition: 0.3s ease-in-out;
+}
+body main #hero .left .card .cta {
+  width: 100%;
+  text-align: center;
+}
+body main #hero .left .card .cta a {
+  padding: 2% 5%;
+  text-decoration: none;
+  color: #fa510f;
+  border-radius: 0.3vw;
+}
+body main #hero .right {
+  padding-left: 5%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+body main #hero .right h3 {
+  color: #fa510f;
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin: 3% 0;
+}
+body main #hero .right p {
+  width: 90%;
+  color: #fff;
+}
+body main #hero .right ul {
+  list-style: none;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body main #hero .right ul li {
+  margin: 0 2% 2% 0;
+  text-transform: capitalize;
+  background-color: #fa510f;
+  color: #fff;
+  padding: 1% 4%;
+  border-radius: 0.3vw;
+}
+body main #hero .right a {
+  margin-top: 3%;
+  color: #fa510f;
+  text-decoration: none;
+}
+body main #hero .right a:hover {
+  color: #fff;
+}
+body main #projects {
+  padding: 7% 10% 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main #projects h3 {
+  width: 100%;
+  color: #fa510f;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 700;
+}
+body main #projects hr {
+  margin-top: 1%;
+  outline: none;
+  border: none;
+  width: 5%;
+  height: 0.2vw;
+  background-color: #101f3c;
+}
+body main #projects p {
+  margin-top: 3%;
+  font-size: 1vw;
+}
+body main #projects .all-projects {
+  padding: 5% 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body main #projects .all-projects .project {
+  width: 33%;
+  margin: 3% 0;
+}
+body main #projects .all-projects .project .image {
+  width: 90%;
+  height: 15vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main #projects .all-projects .project .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5vw;
+}
+body main #projects .all-projects .project .title {
+  width: 90%;
+  margin-top: 2%;
+}
+body main #projects .all-projects .project .title h3 {
+  font-size: 1.5vw;
+}
+body main #projects .all-projects .project .description {
+  width: 90%;
+}
+body main #projects .all-projects .project .description p {
+  font-size: 1vw;
+  color: #101f3c;
+}
+body main #projects .all-projects .project .project-link {
+  width: 90%;
+  text-align: center;
+}
+body main #projects .all-projects .project .project-link a {
+  text-decoration: none;
+  color: #fa510f;
+  font-size: 1vw;
+}
+body main #projects .all-projects .project .project-link a:hover {
+  color: #101f3c;
+}
+body main footer {
+  width: 100%;
+  text-align: center;
+  padding: 2% 10%;
+  background-color: #101f3c;
+}
+body main footer p {
+  font-size: 1vw;
+  color: #fff;
+}/*# sourceMappingURL=dev_profile.css.map */

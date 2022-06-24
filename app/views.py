@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
+from app.models import Project
 
 # Create your views here.
 def home(request):
@@ -16,5 +17,12 @@ def developers(request):
 
 
 def dev_profile(request, username):
-    dev = User.objects.get(username=username)
-    return render(request, 'app/dev_profile.html')
+    user = User.objects.get(username=username)
+    user_skills = user.profile.skills.split()
+    user_projects = Project.objects.filter(user=user)
+    context = {
+        'dev': user,
+        'skills': user_skills,
+        'projects': user_projects
+    }
+    return render(request, 'app/dev_profile.html', context)

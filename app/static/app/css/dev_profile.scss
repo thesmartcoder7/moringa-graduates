@@ -1,0 +1,358 @@
+@import "mixins";
+
+body {
+  width: 100%;
+  height: 100%;
+
+  //main styling
+  main {
+    width: 100%;
+    height: 100%;
+
+    // header styling
+    header {
+      width: 100%;
+      padding: 1% 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .left {
+        width: 20%;
+        .image {
+          a {
+            text-decoration: none;
+            img {
+              width: 10vw;
+            }
+          }
+        }
+      }
+      .right {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .links {
+          width: 70%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+              margin: 0 2%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              a {
+                width: 100%;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $moringa_navy;
+                font-weight: 500;
+                font-size: 1vw;
+                &:hover {
+                  color: $moringa_primary;
+                }
+              }
+            }
+          }
+        }
+
+        .user {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 25;
+          .info {
+            margin-right: 5%;
+            text-align: right;
+            p {
+              text-transform: capitalize;
+              color: $moringa_navy;
+              font-size: 1vw;
+            }
+            a {
+              text-transform: capitalize;
+              text-decoration: none;
+              color: $moringa_primary;
+              &:hover {
+                color: $moringa_navy;
+              }
+            }
+          }
+          .avatar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .image {
+              width: 3.5vw;
+              height: 3.5vw;
+              border-radius: 50%;
+              border: 0.2vw solid $moringa_navy;
+              padding: 2%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              object-fit: cover;
+              img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // hero styling
+    #hero {
+      width: 100%;
+      padding: 5% 10%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: $moringa_navy;
+      .left {
+        width: 30%;
+        .card {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          margin: 3% 0;
+          border-right: 0.2vw solid #4a566c;
+          .info {
+            .image {
+              margin-top: 10%;
+              width: 15vw;
+              height: 15vw;
+              border-radius: 0.5vw;
+              object-fit: cover;
+              border: 0.2vw solid #4a566c;
+              background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 1%;
+              img {
+                height: 100%;
+                width: 100%;
+                border-radius: 0.3vw;
+                object-fit: cover;
+                margin: auto;
+                outline: none;
+                border: none;
+              }
+            }
+            .name-title {
+              margin-top: 5%;
+              width: 100%;
+              text-align: center;
+              font-size: 1vw;
+              text-transform: capitalize;
+              .username {
+                color: $moringa_primary;
+                font-weight: 500;
+                font-size: 1.2vw;
+              }
+              .usertitle {
+                color: #fff;
+              }
+            }
+            .socials {
+              padding: 7% 0;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              a {
+                text-decoration: none;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                svg {
+                  color: $moringa_primary;
+                  width: 1.5vw;
+                  margin: 0 5%;
+                  &:hover {
+                    color: #4a566c;
+                  }
+                }
+              }
+            }
+            .contact {
+              width: 100%;
+              text-align: center;
+              margin-top: 3%;
+              a {
+                text-decoration: none;
+                background-color: $moringa_primary;
+                color: #fff;
+                appearance: none;
+                outline: none;
+                border: none;
+                padding: 3% 5%;
+                cursor: pointer;
+                border-radius: 0.3vw;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                  padding: 4% 6%;
+                  transition: 0.3s ease-in-out;
+                }
+              }
+            }
+          }
+
+          .cta {
+            width: 100%;
+            text-align: center;
+            a {
+              padding: 2% 5%;
+              text-decoration: none;
+              color: $moringa_primary;
+              border-radius: 0.3vw;
+            }
+          }
+        }
+      }
+      .right {
+        padding-left: 5%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        h3 {
+          color: $moringa_primary;
+          font-size: 1.5vw;
+          font-weight: 700;
+          margin: 3% 0;
+        }
+        p {
+          width: 90%;
+          color: #fff;
+        }
+        ul {
+          list-style: none;
+          width: 90%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          li {
+            margin: 0 2% 2% 0;
+            text-transform: capitalize;
+            background-color: $moringa_primary;
+            color: #fff;
+            padding: 1% 4%;
+            border-radius: 0.3vw;
+          }
+        }
+        a {
+          margin-top: 3%;
+          color: $moringa_primary;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    #projects {
+      padding: 7% 10% 10% 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h3 {
+        width: 100%;
+        color: $moringa_primary;
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 700;
+      }
+      hr {
+        margin-top: 1%;
+        outline: none;
+        border: none;
+        width: 5%;
+        height: 0.2vw;
+        background-color: $moringa_navy;
+      }
+      p {
+        margin-top: 3%;
+        font-size: 1vw;
+      }
+      .all-projects {
+        padding: 5% 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .project {
+          width: 33%;
+          margin: 3% 0;
+          .image {
+            width: 90%;
+            height: 15vw;
+            object-fit: cover;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 0.5vw;
+            }
+          }
+          .title {
+            width: 90%;
+            margin-top: 2%;
+            h3 {
+              font-size: 1.5vw;
+            }
+          }
+          .description {
+            width: 90%;
+            p {
+              font-size: 1vw;
+              color: $moringa_navy;
+            }
+          }
+          .project-link {
+            width: 90%;
+            text-align: center;
+            a {
+              text-decoration: none;
+              color: $moringa_primary;
+              font-size: 1vw;
+              &:hover {
+                color: $moringa_navy;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //footer styling
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 2% 10%;
+      background-color: $moringa_navy;
+      p {
+        font-size: 1vw;
+        color: #fff;
+      }
+    }
+  }
+}
