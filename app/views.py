@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from app.models import Project
 from django.contrib.auth.decorators import login_required
+from app.forms import *
 
 
 
@@ -44,3 +45,30 @@ def dashboard(request):
         'projects': user_projects
     }
     return render(request, 'app/dashboard.html', context)
+
+
+
+@login_required
+def add_project(request):
+    add_form = ProjectForm()
+    context = { 
+        'add_form': add_form,
+    }
+    user = User.objects.get(username=request.user.username)
+    if request.method == 'POST':
+        add_form = ProjectForm(request.POST, request.FILES,)
+        if add_form.is_valid():
+            project = Project.objects.create(
+                user=user, 
+                image=request.FILES.get('image'), 
+                title=request.POST.get('title'), 
+                link=request.POST.get('link'), 
+                description=request.POST.get('description')
+            )
+            project.save()
+            return redirect('app-dashboard')
+        else:
+            add_form = ProjectForm(request.POST)
+            return render(request, 'app/add_project.html', context)
+    
+    return render(request, 'app/add_project.html', context)

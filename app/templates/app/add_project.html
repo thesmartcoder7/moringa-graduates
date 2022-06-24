@@ -1,0 +1,13 @@
+{% extends 'users/update.html' %}
+<!--  -->
+{% block title %}
+<title>New Project</title>
+{% endblock %}
+<!--  -->
+{% block form %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="new-project">{{add_form}}</div>
+  <input type="submit" value="Upload Project" />
+</form>
+{% endblock %}

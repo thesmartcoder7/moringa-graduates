@@ -1,0 +1,76 @@
+{% extends 'app/index.html' %}
+<!--  -->
+{% load static %}
+<!--  -->
+{% block css %}
+<link rel="stylesheet" href="{% static 'users/css/update.css'%}" />
+{% endblock %}
+<!--  -->
+{% block title %}
+<title>update</title>
+{% endblock %}
+<!--  -->
+{% block content %}
+<section id="update-form">
+    {% block form %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="module">
+      <div class="left">
+        {{u_form.first_name.label}}
+        <!--  -->
+        {{u_form.first_name}}
+        <!--  -->
+        {{u_form.last_name.label}}
+        <!--  -->
+        {{u_form.last_name}}
+        <!--  -->
+        {{u_form.email.label}}
+        <!--  -->
+        {{u_form.email}}
+        <!--  -->
+        {{p_form.work_title.label}}
+        <!--  -->
+        {{p_form.work_title}}
+        <!--  -->
+        {{p_form.professional_summary.label}}
+        <!--  -->
+        {{p_form.professional_summary}}
+        <!--  -->
+        {{p_form.image.label}}
+        <!--  -->
+        {{p_form.image}}
+        <!--  -->
+      </div>
+      <div class="right">
+        {{p_form.skills.label}} ( Separate With Spaces )
+        <!--  -->
+        {{p_form.skills}}
+        <!--  -->
+        {{p_form.resume.label}}
+        <!--  -->
+        {{p_form.resume}}
+        <!--  -->
+        {{p_form.linkedin.label}}
+        <!--  -->
+        {{p_form.linkedin}}
+        <!--  -->
+        {{p_form.github.label}}
+        <!--  -->
+        {{p_form.github}}
+        <!--  -->
+        {{p_form.twitter.label}}
+        <!--  -->
+        {{p_form.twitter}}
+        <!--  -->
+        {{p_form.portfolio.label}}
+        <!--  -->
+        {{p_form.portfolio}}
+        <!--  -->
+      </div>
+    </div>
+    <input type="submit" value="Update" />
+  </form>
+  {% endblock %}
+</section>
+{% endblock %}

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+body main {
+  width: 100%;
+  height: 100%;
+}
+body main header {
+  width: 100%;
+  padding: 1% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main header .left {
+  width: 20%;
+}
+body main header .left .image a {
+  text-decoration: none;
+}
+body main header .left .image a img {
+  width: 10vw;
+}
+body main header .right {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .links {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .links ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body main header .right .links ul li {
+  margin: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main header .right .links ul li a {
+  width: 100%;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #101f3c;
+  font-weight: 500;
+  font-size: 1vw;
+}
+body main header .right .links ul li a:hover {
+  color: #fa510f;
+}
+body main header .right .user {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25;
+}
+body main header .right .user .info {
+  margin-right: 5%;
+  text-align: right;
+}
+body main header .right .user .info p {
+  text-transform: capitalize;
+  color: #101f3c;
+  font-size: 1vw;
+}
+body main header .right .user .info a {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fa510f;
+}
+body main header .right .user .info a:hover {
+  color: #101f3c;
+}
+body main header .right .user .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body main header .right .user .avatar .image {
+  width: 3.5vw;
+  height: 3.5vw;
+  border-radius: 50%;
+  border: 0.2vw solid #101f3c;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main header .right .user .avatar .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+body main #update-form {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+body main #update-form form {
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+body main #update-form form .module {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+body main #update-form form .module a {
+  color: #646d80;
+}
+body main #update-form form .module label {
+  font-size: 1vw;
+  color: #fa510f;
+  display: none;
+}
+body main #update-form form .module input[type=checkbox] {
+  display: none;
+}
+body main #update-form form .module textarea {
+  margin: 2.5% 0;
+  width: 70%;
+  height: 12vw;
+  padding: 3%;
+  border-radius: 0.5vw;
+}
+body main #update-form form .module input {
+  width: 70%;
+  outline: none;
+  border: none;
+  border-bottom: 0.15vw solid #101f3c;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+body main #update-form form .module .left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+body main #update-form form .module .right {
+  width: 48%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-left: 0.15vw solid #101f3c;
+}
+body main #update-form form .new-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body main #update-form form .new-project label {
+  margin-top: 5%;
+  font-size: 1vw;
+  color: #fa510f;
+}
+body main #update-form form .new-project input[type=checkbox] {
+  display: none;
+}
+body main #update-form form .new-project textarea {
+  margin: 2.5% 0;
+  width: 100%;
+  height: 12vw;
+  padding: 3%;
+  border-radius: 0.5vw;
+}
+body main #update-form form .new-project input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 0.15vw solid #101f3c;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+body main #update-form form input[type=submit] {
+  margin-top: 5%;
+  padding: 1% 3%;
+  background-color: #fa510f;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 0.3vw;
+  cursor: pointer;
+}
+body main footer {
+  width: 100%;
+  text-align: center;
+  padding: 2% 10%;
+  background-color: #101f3c;
+}
+body main footer p {
+  font-size: 1vw;
+  color: #fff;
+}/*# sourceMappingURL=update.css.map */
