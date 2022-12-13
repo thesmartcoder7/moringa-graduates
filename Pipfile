@@ -7,13 +7,11 @@ name = "pypi"
 django = "*"
 python-dotenv = "*"
 whitenoise = "*"
-psycopg2 = "*"
 pillow = "*"
 django-cloudinary-storage = "*"
 gunicorn = "*"
-django-heroku = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "*"
