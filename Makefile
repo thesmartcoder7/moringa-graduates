@@ -18,3 +18,6 @@ migrate:
 
 test:
 	python manage.py test
+
+active:
+	pipenv shell
