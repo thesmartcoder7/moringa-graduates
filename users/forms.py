@@ -5,6 +5,17 @@ from users.models import Profile
 
 
 class SignupForm(UserCreationForm):
+    """
+    A form for user signup.
+
+    Inherits from UserCreationForm, a built-in form for user registration
+    with password handling.
+
+    Attributes:
+        model (User): The User model to be used for user registration.
+        fields (list): The fields to be included in the form.
+
+    """
     class Meta:
         model = User
         fields = [
@@ -16,6 +27,16 @@ class SignupForm(UserCreationForm):
 
 
 class UserUpdateForm(forms.ModelForm):
+    """
+    A form for updating user information.
+
+    Inherits from ModelForm, a generic form for updating model instances.
+
+    Attributes:
+        model (User): The User model to be updated.
+        fields (list): The fields to be included in the form.
+
+    """
     class Meta:
         model = User
         fields = [
@@ -24,7 +45,18 @@ class UserUpdateForm(forms.ModelForm):
             'email'
         ]
 
+
 class ProfileUpdateForm(forms.ModelForm):
+    """
+    A form for updating user profile information.
+
+    Inherits from ModelForm, a generic form for updating model instances.
+
+    Attributes:
+        model (Profile): The Profile model to be updated.
+        fields (list): The fields to be included in the form.
+
+    """
     class Meta:
         model = Profile
         fields = [
